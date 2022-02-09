@@ -1,0 +1,55 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+  border-radius: 15px;
+  background-image: url(https://media.istockphoto.com/photos/question-mark-picture-id1292771469?b=1&k=20&m=1292771469&s=170667a&w=0&h=XU4Moc0bZoR4xywHxRZR0ynUAbpRRt9lQ6ShuoSoBUM=);
+  background-size: cover;
+  border: 2px solid darkblue;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.card__title {
+  color: white;
+  display: flex;
+  height: 25px;
+  width: 100%;
+  margin: 0px 10px 0px 10px;
+}
+.card__title h2 {
+  font-size: 0.9rem;
+}
+
+.card__question {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.719);
+  padding: 10px 5px 10px 5px;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.card__button {
+  background-color: rgba(255, 255, 255, 0.719);
+  margin: 15px;
+  font-size: 0.7rem;
+  border-radius: 15px;
+  border: none;
+  border: 1px solid rgb(0, 0, 0);
+}
+.card__hashtags {
+  margin: 10px 10px 10px 10px;
+  padding: 10px 5px 10px 5px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  font-size: 0.7rem;
+}
+.card__hashtags-tag {
+  background-color: rgba(255, 255, 255, 0.719);
+  margin: 10px 10px 10px 10px;
+  padding: 5px;
+  border-radius: 15px;
+  border: 1px solid rgb(0, 0, 0);
+}
