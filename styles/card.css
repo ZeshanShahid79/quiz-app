@@ -20,7 +20,10 @@
 .card__title h2 {
   font-size: 0.9rem;
 }
-
+.card__bookmark {
+  background-color: black;
+  z-index: 1;
+}
 .card__question {
   margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.719);
