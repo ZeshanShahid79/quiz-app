@@ -22,5 +22,5 @@
 }
 
 .footer__links--bl-none {
-  border: none;
+  border-left: none;
 }
