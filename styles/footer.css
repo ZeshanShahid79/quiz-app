@@ -11,3 +11,16 @@
   color: white;
   text-align: center;
 }
+
+.footer__links {
+  display: flex;
+  justify-content: inherit;
+  align-items: inherit;
+  border-left: solid;
+  height: inherit;
+  width: inherit;
+}
+
+.footer__links--bl-none {
+  border: none;
+}
