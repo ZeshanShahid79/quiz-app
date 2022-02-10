@@ -1,3 +1,4 @@
-@import "base.css";
-@import "card.css";
-@import "footer.css";
+@import url(styles/base.css);
+@import url(styles/card.css);
+@import url(styles/footer.css);
+@import url(header.css);
