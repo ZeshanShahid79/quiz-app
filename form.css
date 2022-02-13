@@ -13,7 +13,7 @@
   margin-top: 60px;
 }
 
-.card__title {
+.create-card__title {
   color: white;
   display: flex;
   height: 25px;
@@ -21,15 +21,14 @@
   margin: 0px 10px 0px 10px;
 }
 
-.card__title h2 {
+.create-card__title h2 {
   font-size: 0.9rem;
 }
 
-.card__button {
+.create-card__button {
   background-color: rgba(255, 255, 255, 0.719);
   margin: 15px;
   font-size: 0.7rem;
   border-radius: 15px;
-  border: none;
-  border: 1px solid rgb(0, 0, 0);
+  border: 5px double rgb(0, 0, 0);
 }

@@ -43,8 +43,7 @@
   margin: 15px;
   font-size: 0.7rem;
   border-radius: 15px;
-  border: none;
-  border: 1px solid rgb(0, 0, 0);
+  border: 5px double rgb(0, 0, 0);
 }
 .card__hashtags {
   margin: 10px 10px 10px 10px;
