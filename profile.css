@@ -1,0 +1,75 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: ;
+  align-items: flex-start;
+  padding: 0px 10px 0px 10px;
+  border-radius: 15px;
+  background-image: url(https://media.istockphoto.com/photos/question-mark-picture-id1292771469?b=1&k=20&m=1292771469&s=170667a&w=0&h=XU4Moc0bZoR4xywHxRZR0ynUAbpRRt9lQ6ShuoSoBUM=);
+  background-size: cover;
+  border: 2px solid darkblue;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin-top: 60px;
+  height: 80vh;
+}
+.profile__header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  margin: 10px;
+  gap: 20px;
+}
+
+.profile__image {
+  height: 150px;
+  border-radius: 100%;
+  border: solid;
+}
+
+.profile__name {
+  font-weight: 700;
+}
+
+.profile__bio-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.profile__tags {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: ;
+}
+
+.profile__tags--tag {
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  cursor: default;
+  background-color: rgba(0, 0, 0, 0.288);
+  border: solid 1px;
+  margin: 5px;
+}
+
+.profile__logout {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.profile__logout__button {
+  background-color: rgba(255, 255, 255, 0.719);
+  margin: 15px;
+  font-size: 0.7rem;
+  border-radius: 15px;
+  border: 5px double rgb(0, 0, 0);
+}
+
+.p--mt {
+  margin-top: 40px;
+}
