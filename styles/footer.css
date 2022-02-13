@@ -21,6 +21,6 @@
   width: inherit;
 }
 
-.footer__links--bl-none {
-  border-left: none;
+.footer__links--w {
+  width: 40px;
 }
