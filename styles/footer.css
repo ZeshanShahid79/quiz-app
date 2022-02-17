@@ -1,5 +1,4 @@
 .footer {
-  background-color: rgb(0, 162, 255);
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -13,12 +12,17 @@
 }
 
 .footer__links {
+  background-color: rgb(0, 162, 255);
   display: flex;
   justify-content: inherit;
   align-items: inherit;
   border-left: solid black;
   height: inherit;
   width: inherit;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  cursor: pointer;
 }
 
 .footer__links--bl-none {
