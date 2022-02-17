@@ -56,9 +56,12 @@
   margin: 15px;
   font-size: 0.7rem;
   cursor: pointer;
-
   border-radius: 15px;
 }
+.card__answer {
+  display: none;
+}
+
 .card__hashtags {
   margin: 10px;
   padding: 10px 5px 10px 5px;

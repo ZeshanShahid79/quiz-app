@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 10px 0px 10px;
+  padding: 10px;
   border-radius: 15px;
   background-image: url(https://media.istockphoto.com/photos/question-mark-picture-id1292771469?b=1&k=20&m=1292771469&s=170667a&w=0&h=XU4Moc0bZoR4xywHxRZR0ynUAbpRRt9lQ6ShuoSoBUM=);
   background-size: cover;
@@ -11,6 +11,10 @@
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   position: relative;
   margin-top: 60px;
+}
+.create-card__textarea {
+  border-radius: 15px;
+  padding-left: 10px;
 }
 
 .create-card__title {
