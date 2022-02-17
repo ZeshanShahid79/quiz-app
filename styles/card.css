@@ -12,6 +12,12 @@
   margin-top: 60px;
 }
 
+/*@media screen and (min-width: 600px) {
+  .card {
+    flex-direction: row;
+  }
+}
+*/
 .card__title {
   color: white;
   display: flex;
