@@ -58,9 +58,6 @@
   cursor: pointer;
   border-radius: 15px;
 }
-.card__answer {
-  display: none;
-}
 
 .card__hashtags {
   margin: 10px;

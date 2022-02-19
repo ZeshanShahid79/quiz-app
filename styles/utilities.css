@@ -1,0 +1,7 @@
+.hidden {
+  display: none;
+}
+.marked {
+  border-radius: 100%;
+  border: solid white;
+}

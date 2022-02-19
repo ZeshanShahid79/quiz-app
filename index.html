@@ -5,14 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script defer src="./index.js"></script>
+    <script type="module" defer src="./index.js"></script>
     <title>Hamburg-Quiz-App</title>
   </head>
   <body>
     <header>
       <h1>Quiz-App</h1>
     </header>
-    <main>
+    <main data-js="home">
+      <div data-js="quizCard" class="card">
+        <div class="card__title">
+          <h2>Question:</h2>
+          <button class="card__bookmark">
+            <img
+              data-js="bookmark"
+              class="card__bookmark__icon"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Bookmark_icon.svg/1024px-Bookmark_icon.svg.png"
+              alt="bookmark icon"
+            />
+          </button>
+        </div>
+        <article class="card__question">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque,
+          dolorem nihil? Numquam quis vero optio. saepe!
+        </article>
+        <button data-js="answerButton" class="card__button">Show Answer</button>
+        <article data-js="answerText" class="card__question hidden">
+          Lorem ipsum dolor sit amet consecteturrup
+        </article>
+
+        <div class="card__hashtags">
+          <div class="card__hashtags-tag">#Hamburg</div>
+          <div class="card__hashtags-tag">#Berlin</div>
+          <div class="card__hashtags-tag">#Köln</div>
+          <div class="card__hashtags-tag">#München</div>
+        </div>
+      </div>
+
+      <div data-js="quizCard" class="card">
+        <div class="card__title">
+          <h2>Question:</h2>
+          <button class="card__bookmark">
+            <img
+              data-js="bookmark"
+              class="card__bookmark__icon"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Bookmark_icon.svg/1024px-Bookmark_icon.svg.png"
+              alt="bookmark icon"
+            />
+          </button>
+        </div>
+        <article class="card__question">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque,
+          dolorem nihil? Numquam quis vero optio. saepe!
+        </article>
+        <button data-js="answerButton" class="card__button">Show Answer</button>
+        <article data-js="answerText" class="card__question hidden">
+          Lorem ipsum dolor sit amet consecteturrup
+        </article>
+
+        <div class="card__hashtags">
+          <div class="card__hashtags-tag">#Hamburg</div>
+          <div class="card__hashtags-tag">#Berlin</div>
+          <div class="card__hashtags-tag">#Köln</div>
+          <div class="card__hashtags-tag">#München</div>
+        </div>
+      </div>
+
+      <div data-js="quizCard" class="card">
+        <div class="card__title">
+          <h2>Question:</h2>
+          <button class="card__bookmark">
+            <img
+              data-js="bookmark"
+              class="card__bookmark__icon"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Bookmark_icon.svg/1024px-Bookmark_icon.svg.png"
+              alt="bookmark icon"
+            />
+          </button>
+        </div>
+        <article class="card__question">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque,
+          dolorem nihil? Numquam quis vero optio. saepe!
+        </article>
+        <button data-js="answerButton" class="card__button">Show Answer</button>
+        <article data-js="answerText" class="card__question hidden">
+          Lorem ipsum dolor sit amet consecteturrup
+        </article>
+
+        <div class="card__hashtags">
+          <div class="card__hashtags-tag">#Hamburg</div>
+          <div class="card__hashtags-tag">#Berlin</div>
+          <div class="card__hashtags-tag">#Köln</div>
+          <div class="card__hashtags-tag">#München</div>
+        </div>
+      </div>
+
+      <div data-js="quizCard" class="card card--mb">
+        <div class="card__title">
+          <h2>Question:</h2>
+          <button class="card__bookmark">
+            <img
+              data-js="bookmark"
+              class="card__bookmark__icon"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Bookmark_icon.svg/1024px-Bookmark_icon.svg.png"
+              alt="bookmark icon"
+            />
+          </button>
+        </div>
+        <article class="card__question">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque,
+          dolorem nihil? Numquam quis vero optio. saepe!
+        </article>
+        <button data-js="answerButton" class="card__button">Show Answer</button>
+        <article data-js="answerText" class="card__question hidden">
+          Lorem ipsum dolor sit amet consecteturrup
+        </article>
+
+        <div class="card__hashtags">
+          <div class="card__hashtags-tag">#Hamburg</div>
+          <div class="card__hashtags-tag">#Berlin</div>
+          <div class="card__hashtags-tag">#Köln</div>
+          <div class="card__hashtags-tag">#München</div>
+        </div>
+      </div>
+    </main>
+
+    <main data-js="bookmarks" class="hidden">
+      <header>
+        <h1>Bookmarks</h1>
+      </header>
       <div class="card">
         <div class="card__title">
           <h2>Question:</h2>
@@ -126,32 +247,136 @@
       </div>
     </main>
 
-    <nav class="footer">
-      <button class="footer__links footer__links--bl-none">
+    <main data-js="create" class="hidden">
+      <header>
+        <h1>Create</h1>
+      </header>
+      <div class="create-card">
+        <form
+          aria-labelledby="form-heading"
+          aria-describedby="form-description"
+        >
+          <legend class="create-card__title">Question</legend>
+          <textarea
+            class="create-card__textarea"
+            name="add-a-question"
+            id="add-a-question"
+            placeholder="type in here your question...?"
+            rows="8"
+            cols="25"
+          ></textarea>
+          <legend class="create-card__title">Answer</legend>
+          <textarea
+            class="create-card__textarea"
+            name="add-an-answer"
+            id="add-an-answer"
+            placeholder="type in here your answer...!"
+            rows="8"
+            cols="25"
+          ></textarea>
+          <legend class="create-card__title">Tags</legend>
+          <textarea
+            class="create-card__textarea"
+            name="add-tags"
+            id="add-tags"
+            placeholder="add your tags in here devided by comma,,,!"
+            rows="4"
+            cols="25"
+          ></textarea>
+        </form>
+
+        <div>
+          <button class="create-card__button">Submit</button>
+        </div>
+      </div>
+    </main>
+
+    <main data-js="profile" class="hidden">
+      <header>
+        <h1>Profile</h1>
+      </header>
+      <div class="profile">
+        <div class="profile__header">
+          <img
+            class="profile__image"
+            src="./Images/abstract-user-flat-4.svg"
+            alt=""
+          />
+          <p class="profile__name">Zeshan Shahid</p>
+        </div>
+        <article class="profile__bio-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque,
+          dolorem nihil? Numquam quis vero optio. saepe!
+        </article>
+
+        <p class="p--mt">Skills:</p>
+        <div class="profile__tags">
+          <a class="profile__tags--tag" href="#">Hamburg</a>
+          <a class="profile__tags--tag" href="#">Berlin</a>
+          <a class="profile__tags--tag" href="#">Köln</a>
+          <a class="profile__tags--tag" href="#">München</a>
+        </div>
+
+        <div class="profile__logout">
+          <button class="profile__logout__button">Log Out</button>
+        </div>
+      </div>
+    </main>
+
+    <nav data-js="navbar" class="footer">
+      <button data-js="buttonHome" class="footer__links footer__links--bl-none">
         <img
+          data-js="iconHomeBlack"
           class="footer__links--w"
           src="./Images/footer-icons/icon-black/Home16Filled.svg"
           alt=""
         />
-      </button>
-      <button class="footer__links">
         <img
+          data-js="iconHomeWhite"
+          class="footer__links--w hidden"
+          src="./Images/footer-icons/icon-white/Home12Regular.svg"
+          alt=""
+        />
+      </button>
+      <button data-js="buttonBookmarks" class="footer__links">
+        <img
+          data-js="iconBookmarkWhite"
           class="footer__links--w"
           src="./Images/footer-icons/icon-white/BookmarksOutline.svg"
           alt=""
         />
-      </button>
-      <button class="footer__links">
         <img
+          data-js="iconBookmarkBlack"
+          class="footer__links--w hidden"
+          src="./Images/footer-icons/icon-black/BookmarksFilled.svg"
+          alt=""
+        />
+      </button>
+      <button data-js="buttonCreate" class="footer__links">
+        <img
+          data-js="iconCreateWhite"
           class="footer__links--w"
           src="./Images/footer-icons/icon-white/ChatBubbleOutlineTwotone.svg"
           alt=""
         />
-      </button>
-      <button class="footer__links">
         <img
-          class="footer__links--w"
+          data-js="iconCreateBlack"
+          class="footer__links hidden footer__links--bl-none"
+          src="./Images/footer-icons/icon-black/ChatBubbleOutlined.svg"
+          alt=""
+        />
+      </button>
+      <button data-js="buttonProfile" class="footer__links">
+        <img
+          data-js="iconProfileWhite"
+          class="footer__links footer__links--w footer__links--bl-none"
           src="./Images/footer-icons/icon-white/AccountCircleOutlined.svg"
+          alt=""
+        />
+        <img
+          data-js="iconProfileBlack"
+          class="footer__links footer__links footer__links--bl-none hidden"
+          src="./Images/footer-icons/icon-black/AccountCircleRound.svg"
           alt=""
         />
       </button>
