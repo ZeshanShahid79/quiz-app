@@ -258,31 +258,40 @@
         >
           <legend class="create-card__title">Question</legend>
           <textarea
+            data-js="textArea"
             class="create-card__textarea"
             name="add-a-question"
             id="add-a-question"
             placeholder="type in here your question...?"
             rows="8"
             cols="25"
+            maxlength="200"
           ></textarea>
+          <span data-js="counter"></span>
           <legend class="create-card__title">Answer</legend>
           <textarea
+            data-js="answerarea"
             class="create-card__textarea"
             name="add-an-answer"
             id="add-an-answer"
             placeholder="type in here your answer...!"
             rows="8"
             cols="25"
+            maxlength="200"
           ></textarea>
+          <span data-js="answercounter"></span>
           <legend class="create-card__title">Tags</legend>
           <textarea
+            data-js="tagarea"
             class="create-card__textarea"
             name="add-tags"
             id="add-tags"
             placeholder="add your tags in here devided by comma,,,!"
             rows="4"
             cols="25"
+            maxlength="200"
           ></textarea>
+          <span data-js="tagcounter"></span>
         </form>
 
         <div>

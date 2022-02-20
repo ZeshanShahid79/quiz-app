@@ -45,22 +45,20 @@ function navigation() {
   const buttons = [buttonHome, buttonBookmarks, buttonCreate, buttonProfile];
   const mainPage = [mainHome, mainBookmarks, mainCreate, mainProfile];
 
-  buttons.forEach(function (button, index) {
+  buttons.forEach((button, index) => {
     button.addEventListener('click', () => {
       click(mainPage[index]);
     });
   });
 
   function click(aktion) {
-    mainPage.forEach(function (button, index) {
+    mainPage.forEach((button, index) => {
       if (button == aktion) {
         aktion.classList.remove('hidden');
-
         iconWhite[index].classList.add('hidden');
         iconBlack[index].classList.remove('hidden');
       } else {
         button.classList.add('hidden');
-
         iconWhite[index].classList.remove('hidden');
         iconBlack[index].classList.add('hidden');
       }
