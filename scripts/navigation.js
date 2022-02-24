@@ -4,7 +4,6 @@ function navigation() {
   const mainBookmarks = document.querySelector('[data-js="bookmarks"]');
   const mainCreate = document.querySelector('[data-js="create"]');
   const mainProfile = document.querySelector('[data-js="profile"]');
-  //const navbar = document.querySelector('[data-js="navbar"]');
 
   const buttonHome = document.querySelector('[data-js="buttonHome"]');
   const buttonBookmarks = document.querySelector('[data-js="buttonBookmarks"]');
@@ -65,4 +64,3 @@ function navigation() {
     });
   }
 }
-

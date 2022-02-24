@@ -18,7 +18,7 @@ function create() {
   answerArea.addEventListener('input', () => {
     if (answerArea.value.length <= maxCharacters) {
       answerCounter.textContent = `${answerArea.value.length} /${maxCharacters}`;
-      maxCharacters
+      maxCharacters;
     }
   });
 
