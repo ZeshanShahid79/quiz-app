@@ -47,21 +47,22 @@ function navigation() {
 
   buttons.forEach((button, index) => {
     button.addEventListener('click', () => {
-      click(mainPage[index]);
+      currentPage(mainPage[index]);
     });
   });
 
-  function click(aktion) {
-    mainPage.forEach((button, index) => {
-      if (button == aktion) {
-        aktion.classList.remove('hidden');
+  function currentPage(page) {
+    mainPage.forEach((panel, index) => {
+      if (panel == page) {
+        page.classList.remove('hidden');
         iconWhite[index].classList.add('hidden');
         iconBlack[index].classList.remove('hidden');
       } else {
-        button.classList.add('hidden');
+        panel.classList.add('hidden');
         iconWhite[index].classList.remove('hidden');
         iconBlack[index].classList.add('hidden');
       }
     });
   }
 }
+
